@@ -1,0 +1,321 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+    box-sizing: border-box;
+  }
+  
+  /******************************************
+  /* LAYOUT
+  /*********1**********************************/
+  img{
+    display: block;
+    margin: 0 auto;
+  }
+  
+  
+  /******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+
+  nav {
+      padding-top:5px;
+      height: 70px;
+      background-color: rgba(0, 0, 0, 0.391);
+  }
+  
+  nav ul{
+      display: flex;
+      justify-content: space-around;
+      list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-family: 'Teko', sans-serif;
+    font-size: 25px;
+    
+    }
+
+  .logo {
+      margin-right: 300px;
+      margin-left: -70px;
+    
+  }
+  .logo img{
+      width: 25%;
+      margin: -15px 0px 20px 25px;
+  }
+  
+  .main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 70px 0 120px 0;
+      margin-bottom: 50px;
+      height: 607px;
+      font-family: 'Teko', sans-serif;
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      color: white;
+      font-size: 12px;
+  }
+  .main img {
+      padding-bottom: 50px;
+  }
+  .backgroundImage {
+      background-image: url("food-dark.jpg");
+  }
+  .main h1 {
+      font-size: 3rem;
+      
+      margin: 0px;
+      
+  }
+  .main p {
+      font-size: 2rem;
+  }
+  .aboutUs {
+    background-color: rgba(255, 255, 255, 0.332);
+    display: flex;
+    
+    justify-content: space-around;
+    padding: 0px 0 0px 100px;
+    height: 500px;
+    font-family: 'Teko', sans-serif;
+    
+    color: rgb(77, 71, 71);
+    font-size: 12px;
+  }
+  .second, h2{
+    font-size: 2rem;
+    margin: 0;
+    width:900px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    flex: none;
+    font-family: 'Teko', sans-serif;
+  }
+  .second {
+    font-size: 6rem;
+  }
+  .smallBorder {
+    
+    border-bottom: 3px solid rgb(144, 175, 5);
+    border-width: thick;
+    width: 20%;
+    margin: 10px auto 20px auto;
+    
+      
+  }
+  
+    
+.aboutUs img {
+    width: 40%;
+    
+}
+.aboutUs .upper{
+    width: 100%;
+    padding: 20px;
+}
+
+.aboutUs .lower {
+    display: flex;
+    flex-direction: row;
+}
+.foodPics{
+    width: 40%;
+    
+    display: flex;
+    flex-direction: column;
+}
+.history {
+    width: 70%;
+    font-size: 1.5rem;
+    padding: 30px 180px 0 30px;
+   
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    padding-top: 50px;
+    position: relative;
+    background-image: url(galleryBackground.jpeg);
+    background-size:100%;
+    
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  .mySlides img {
+      width: 700px;
+      height: 500px;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    margin-left: 250px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    margin-right: 250px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  .row{
+      padding-left:480px;
+      height: 180px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+.menu {
+  height: 600px;
+  text-align: center;
+  font-family: 'Teko', sans-serif;
+  padding: 30px 0;
+
+}
+
+.menu h2 {
+  font-size: 3rem;
+}
+.menu h3{
+  font-size: 1.25rem;
+}
+.footer {
+  background-color: #222;
+  height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  font-family: 'Teko', sans-serif;
+  padding: 40px 40px;
+  text-align: center;
+  
+}
+.left > img {
+  width: 50%;
+}
+.left, .right, .center > h2, .center, .right >h2 {
+  width: 50%;
+}
+.right{
+  width: 30%;
+}
+.center {
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    background-color:;
+  }
+  .backgroundImage {
+    width: 900px;
+  }
+  .logo {
+    display: none;
+  }
+  .aboutUs {
+    width: 800px;
+    margin: 0 40px;
+  }
+  .history {
+    font-size: 1.2rem;
+    width: 110%;
+    padding-right: 30px;
+  }
+  .foodPics {
+    width: 330px;
+  }
+  .lower {
+    width: 330px;
+  }
+  .container {
+    width: 900px;
+  }
+  .row {
+    padding-left: 300px;
+  }
+  .menu {
+    width: 900px;
+  }
+  .footer {
+    width: 900px;
+  }
+  .smallBorder {
+    margin-left: 360px;
+    width: 180px;
+  }
+}
